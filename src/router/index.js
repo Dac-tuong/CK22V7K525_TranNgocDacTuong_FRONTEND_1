@@ -18,10 +18,10 @@ const routes = [
     props: true, // Truyền các biến trong $route.params vào làm props
   },
   {
-    path: "/contacts/add ",
+    path: "/contacts/add",
     name: "contact.add",
     component: () => import("@/views/ContactCreate.vue"),
-    props: true, // Truyền các biến trong $route.params vào làm props
+    props: true,
   },
 ];
 const router = createRouter({
