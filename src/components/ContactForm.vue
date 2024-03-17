@@ -21,7 +21,7 @@
       <ErrorMessage name="email" class="error-feedback" />
     </div>
     <div class="form-group">
-      <label for="address">Địa chỉ</label>
+      <label for="address">Địa chỉ </label>
       <Field
         name="address"
         type="text"
