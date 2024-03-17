@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <h1>Thêm liên hệ</h1>
     <contact-form @submit:contact="submitContact" :contact="newContact" />
   </div>
@@ -28,7 +28,7 @@ export default {
     async submitContact(contactData) {
       try {
         await ContactService.create(contactData);
-        alert("Da thêm thành công!.");
+        alert("Đã thêm thành công!.");
         this.$router.push({ name: "contactbook" });
       } catch (error) {
         console.error(error);
